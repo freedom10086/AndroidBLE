@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="12dp"
+    android:paddingEnd="16dp"
+    android:paddingStart="16dp"
+    android:paddingTop="12dp">
+
+    <TextView
+        android:id="@+id/device_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="name"
+        android:textColor="?android:textColorPrimary"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/device_bond_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_toEndOf="@+id/device_name"
+        android:background="@drawable/bondstate"
+        android:paddingBottom="1.5dp"
+        android:paddingEnd="2.5dp"
+        android:paddingStart="2.5dp"
+        android:paddingTop="1.5dp"
+        android:text="bonded"
+        android:textColor="@android:color/white"
+        android:textSize="8sp" />
+
+    <TextView
+        android:id="@+id/device_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/device_name"
+        android:layout_marginTop="4dp"
+        android:text="12:34:56:78"
+        android:textColor="?android:textColorSecondary"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/device_rssi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:text="-89"
+        android:textColor="?android:textColorSecondary"
+        android:textSize="12sp" />
+</RelativeLayout>
